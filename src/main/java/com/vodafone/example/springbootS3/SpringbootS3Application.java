@@ -8,13 +8,12 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 @SpringBootApplication
 public class SpringbootS3Application extends SpringBootServletInitializer {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SpringbootS3Application.class, args);
-	}
-	
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
         return builder.sources(SpringbootS3Application.class);
-    }		
+    }	
 
+    public static void main(String[] args) {
+		SpringApplication.run(SpringbootS3Application.class, args);
+	}
 }
